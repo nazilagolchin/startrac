@@ -3,6 +3,7 @@ package com.startrac.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name="UNIT_OF_MEASUE")
 public class UnitOfMeasue {
 
 	@Id

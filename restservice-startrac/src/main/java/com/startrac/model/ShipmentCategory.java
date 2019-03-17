@@ -6,6 +6,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @OnDelete(action = OnDeleteAction.NO_ACTION)
+@Table(name="SHIPMENT_CATEGORY")
 public class ShipmentCategory {
 
 	@Id
@@ -13,11 +14,11 @@ public class ShipmentCategory {
 	@SequenceGenerator(sequenceName = "ShipmentCategory_seq", name = "SHIPMENTCATEGORY_SEQ")
 	private Long id;
 
-	@OneToOne(fetch = FetchType.EAGER)
+	@OneToOne(fetch = FetchType.EAGER,orphanRemoval=true,cascade=CascadeType.PERSIST)
 	@JoinColumn(name = "category_id", nullable = false)
 	private Category category;
 
-	@OneToOne(fetch = FetchType.EAGER)
+	@OneToOne(fetch = FetchType.EAGER,orphanRemoval=true,cascade=CascadeType.PERSIST)
 	@JoinColumn(name = "shipment_id", nullable = false)
 	private Shipment shipment;
 

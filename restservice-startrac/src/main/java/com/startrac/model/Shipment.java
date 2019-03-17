@@ -7,6 +7,7 @@ import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @OnDelete(action = OnDeleteAction.CASCADE)
+@Table(name="SHIPMENT")
 public class Shipment {
 
 	@Id

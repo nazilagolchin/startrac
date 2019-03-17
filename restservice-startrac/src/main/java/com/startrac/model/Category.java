@@ -3,6 +3,7 @@ package com.startrac.model;
 import javax.persistence.*;
 
 @Entity
+@Table(name="CATEGORY")
 public class Category {
 
 	@Id
