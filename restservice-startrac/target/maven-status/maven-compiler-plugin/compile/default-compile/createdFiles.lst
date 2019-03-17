@@ -1,0 +1,12 @@
+com\startrac\model\Shipment.class
+com\startrac\TruckController.class
+com\startrac\dao\UnitOfMeasueRepository.class
+com\startrac\dao\CategoryRepository.class
+com\startrac\dao\TruckRepository.class
+com\startrac\dao\ShipmentCategoryRepository.class
+com\startrac\model\Truck.class
+com\startrac\model\Category.class
+com\startrac\Application.class
+com\startrac\model\ShipmentCategory.class
+com\startrac\dao\ShipmentRepository.class
+com\startrac\model\UnitOfMeasue.class
